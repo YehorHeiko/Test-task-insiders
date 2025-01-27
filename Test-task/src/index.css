@@ -1,0 +1,53 @@
+.tabs-wrapper {
+  display: flex;
+  align-items: center;
+  position: relative;
+  justify-content: center;
+  height: 100vh;
+}
+
+.tabs-container {
+  display: flex;
+  overflow: hidden;
+  white-space: nowrap;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.tab {
+  padding: 10px 15px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  margin-right: 5px;
+  border-radius: 5px;
+}
+
+.tab.active {
+  background: #007bff;
+  color: white;
+}
+
+.overflow-menu {
+  position: relative;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 10px 15px;
+  border: 1px solid #ddd;
+  background: #f9f9f9;
+  border-radius: 5px;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  border: 1px solid #ddd;
+  display: none;
+  flex-direction: column;
+}
+
+.overflow-menu:hover .dropdown-menu {
+  display: flex;
+}
